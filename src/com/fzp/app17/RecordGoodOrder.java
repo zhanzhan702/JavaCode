@@ -46,7 +46,7 @@ class FileUtil{
         File file = new File(name);
         if(!file.exists()){
             String str =  "商品编号,商品名称,购买数量,单价,总价,联系人" ;
-            FileWriter fw = null;
+            FileWriter fw;
             try {
                 fw = new FileWriter(name);
                 fw.write(str);
